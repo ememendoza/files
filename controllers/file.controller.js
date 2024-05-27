@@ -34,7 +34,7 @@ const findFile = async (req, res) => {
   });
 };
 
-const downloadFile = async (req, res) => {
+const downloadMyFile = async (req, res) => {
   await downloadFile(req.params.fileName);
   res.json({
     message: "File Downloaded",
@@ -45,5 +45,5 @@ export const methods = {
   postFile,
   getMyFile,
   findFile,
-  downloadFile,
+  downloadMyFile,
 };
