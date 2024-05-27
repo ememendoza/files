@@ -22,7 +22,7 @@ const postFile = async (req, res) => {
   });
 };
 
-const getFile = async (req, res) => {
+const getMyFile = async (req, res) => {
   const result = await getFiles();
   res.json(result.Contents);
 };
@@ -43,7 +43,7 @@ const downloadFile = async (req, res) => {
 
 export const methods = {
   postFile,
-  getFile,
+  getMyFile,
   findFile,
   downloadFile,
 };
